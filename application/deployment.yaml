@@ -50,10 +50,10 @@ spec:
                 configMapKeyRef:
                   name: app-configmap
                   key: grpname
-          resources:
-            requests:
-              cpu: 15m
-            limits:
-              cpu: 50m
+         # resources:
+          #  requests:
+          #   cpu: 15m
+           # limits:
+           #   cpu: 50m
           ports:
             - containerPort: 81
