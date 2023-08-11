@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-configmap
+data:
+  bucket: "clog15"
+  bgimg: "canadajpeg"
+  grpname: "Group 15"
