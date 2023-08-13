@@ -9,4 +9,6 @@ spec:
   resources:
     requests:
       storage: 2Gi
-  storageClassName: aws-gp2
+  storageClassName: standard
+  
+  
