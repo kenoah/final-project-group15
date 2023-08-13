@@ -28,12 +28,9 @@ spec:
                   name: mysql
                   key: password
             - name: DBUSER
-              valueFrom:
-                secretKeyRef:
-                  name: mysql
-                  key: username
+              value: root
             - name: DBHOST
-              value: "mysql.final.svc.cluster.local"
+              value: "mysql-service.sqldb.svc.cluster.local"
             - name: DBPORT
               value: "3306"
             - name: BUCKETNAME
