@@ -36,3 +36,4 @@ terraform.rc
 /kind.yaml
 /kubectl
 /init_kind.sh
+/.c9
