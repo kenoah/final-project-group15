@@ -32,3 +32,7 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+/terraform
+/kind.yaml
+/kubectl
+/init_kind.sh
