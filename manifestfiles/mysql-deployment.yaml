@@ -4,7 +4,7 @@ metadata:
   name: mysql
   namespace: sqldb
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: mysql
@@ -30,4 +30,4 @@ spec:
       volumes:
         - name: mysql-persistent-storage
           persistentVolumeClaim:
-            claimName: pvc-mysql
+            claimName: mysql
