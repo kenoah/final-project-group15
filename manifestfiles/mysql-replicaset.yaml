@@ -2,11 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: rs-mysql
-<<<<<<< HEAD
-  namespace: sqldb
-=======
   namespace: final
->>>>>>> 39ca512 (minor fixes to the yaml files)
 spec:
   replicas: 3
   selector:

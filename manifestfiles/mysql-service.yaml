@@ -2,11 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql-service
-<<<<<<< HEAD
-  namespace: sqldb
-=======
   namespace: final
->>>>>>> 39ca512 (minor fixes to the yaml files)
   labels:
     app: mysql
 spec:

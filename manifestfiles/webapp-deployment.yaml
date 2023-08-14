@@ -2,11 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: application
-<<<<<<< HEAD
-  namespace: webapp
-=======
   namespace: final
->>>>>>> 39ca512 (minor fixes to the yaml files)
   labels:
     app: employees
     component: frontend
@@ -24,30 +20,17 @@ spec:
       serviceAccountName: clo835
       containers:
         - name: application-container
-<<<<<<< HEAD
-          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/websrv-img
-=======
           image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/websrv-img:webserver_version_1
->>>>>>> 39ca512 (minor fixes to the yaml files)
           env:
             - name: DBPWD
               valueFrom:
                 secretKeyRef:
-<<<<<<< HEAD
-                  name: mysql
-                  key: password
-            - name: DBUSER
-              value: root
-            - name: DBHOST
-              value: "mysql-service.sqldb.svc.cluster.local"
-=======
                   name: mysql-root-password
                   key: MYSQL_ROOT_PASSWORD
             - name: DBUSER
               value: root
             - name: DBHOST
               value: "mysql-service.final.svc.cluster.local"
->>>>>>> 39ca512 (minor fixes to the yaml files)
             - name: DBPORT
               value: "3306"
             - name: BUCKETNAME
@@ -65,18 +48,10 @@ spec:
                 configMapKeyRef:
                   name: app-configmap
                   key: grpname
-<<<<<<< HEAD
-         # resources:
-          #  requests:
-          #   cpu: 15m
-           # limits:
-           #   cpu: 50m
-=======
           resources:
             requests:
               cpu: 15m
             limits:
               cpu: 50m
->>>>>>> 39ca512 (minor fixes to the yaml files)
           ports:
             - containerPort: 81
