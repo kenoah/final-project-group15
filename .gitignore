@@ -35,5 +35,9 @@ terraform.rc
 /terraform
 /kind.yaml
 /kubectl
+<<<<<<< HEAD
 /init_kind.sh
 .c9/
+=======
+/init_kind.sh
+>>>>>>> 39ca512 (minor fixes to the yaml files)
