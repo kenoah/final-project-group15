@@ -7,10 +7,6 @@ Team Memebers
 3. Namitha Bejoy
 Final Project: Deployment of 3-tiered web application to managed K8s cluster on Amazon EKS.
 
-<img width="736" alt="image" src="https://github.com/kenoah/final-project-group15/assets/130622591/f1fcfe26-0d86-475f-9153-5dfcfe8c6dd5">
-
-
-image
 
 Mapping Service account with IAM Role having S3 bucket access permissions
 Commands
