@@ -8,6 +8,7 @@ data "aws_ami" "amazon_linux_2" {
   }
 }
 
+#the key name we have used here is final
 
 resource "aws_instance" "k8s" {
   ami           = data.aws_ami.amazon_linux_2.id
@@ -16,7 +17,7 @@ resource "aws_instance" "k8s" {
   root_block_device {
     volume_size = 16
   }
-  
+  #vpc getting craeted with tags clo835
   vpc_security_group_ids = [
     module.ec2_sg.security_group_id,
     module.dev_ssh_sg.security_group_id
