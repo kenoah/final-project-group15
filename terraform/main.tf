@@ -27,6 +27,7 @@ resource "aws_instance" "k8s" {
   tags = {
     project = "clo835"
   }
+#our project is clo835 and the sue name will be used everywhere for naming conventiona nd also to avoid confusion
 
   key_name                = "final"
   monitoring              = true
