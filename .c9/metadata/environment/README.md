@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-{"filter":false,"title":"README.md","tooltip":"/README.md","undoManager":{"mark":-1,"position":-1,"stack":[]},"ace":{"folds":[],"scrolltop":0,"scrollleft":0,"selection":{"start":{"row":0,"column":0},"end":{"row":0,"column":0},"isBackwards":false},"options":{"guessTabSize":true,"useWrapMode":false,"wrapToView":true},"firstLineState":0},"timestamp":1691901944811,"hash":"18a59a82ac3a731361437da2672da3cd1469f180"}
-=======
-{"filter":false,"title":"README.md","tooltip":"/README.md","undoManager":{"mark":-1,"position":-1,"stack":[]},"ace":{"folds":[],"scrolltop":0,"scrollleft":0,"selection":{"start":{"row":0,"column":0},"end":{"row":0,"column":0},"isBackwards":false},"options":{"guessTabSize":true,"useWrapMode":false,"wrapToView":true},"firstLineState":0},"hash":"18a59a82ac3a731361437da2672da3cd1469f180","timestamp":1691901939380}
->>>>>>> 39ca512 (minor fixes to the yaml files)
