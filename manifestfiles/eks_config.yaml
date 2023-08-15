@@ -3,11 +3,13 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: final
+  name: clo835
   region: "us-east-1"
-  version: "1.19"
+  version: "1.26"
 
 availabilityZones: ["us-east-1a" ,"us-east-1b" ,"us-east-1c"]
+iam:
+  serviceRoleARN: arn:aws:iam::132456686334:role/LabRole
 
 cloudWatch:
   clusterLogging:
@@ -19,3 +21,5 @@ managedNodeGroups:
   instanceType: t3.small
   ssh:
     enableSsm: true
+  iam:
+    instanceRoleARN: arn:aws:iam::132456686334:role/LabRole

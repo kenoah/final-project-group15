@@ -4,5 +4,6 @@ metadata:
   name: app-configmap
 data:
   bucket: "clog15"
-  bgimg: "canada.jpeg"
+  bgimg: "https://clog15.s3.amazonaws.com/canada.jpeg"
   grpname: "Group 15"
+  

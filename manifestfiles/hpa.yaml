@@ -2,6 +2,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: application-hpa
+  namespace: final
   labels:
     app: employees
     component: frontend

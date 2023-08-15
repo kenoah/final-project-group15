@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: application
-  namespace: final
   labels:
     app: employees
     component: frontend
@@ -20,13 +19,13 @@ spec:
       serviceAccountName: clo835
       containers:
         - name: application-container
-          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/websrv-img:webserver_version_1
+          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/websrv-img:webserver_version_10.7
           env:
             - name: DBPWD
               valueFrom:
                 secretKeyRef:
                   name: mysql-root-password
-                  key: MYSQL_ROOT_PASSWORD
+                  key:  MYSQL_ROOT_PASSWORD
             - name: DBUSER
               value: root
             - name: DBHOST
