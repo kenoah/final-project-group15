@@ -24,4 +24,4 @@ spec:
                   key: MYSQL_ROOT_PASSWORD
           ports:
             - containerPort: 3306
-       s
+       
